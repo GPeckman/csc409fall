@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>Async Test</Title>
+        <script src="js/asyncTest.js"></script>
+    </head>
+    <body>
+        <input
+            type="number"
+            name="delay"
+            id="delay"
+            required
+            size="10" />
+        
+        <button onclick="startCounting()">Start</button>
+
+        <h1>
+            Time: <div id="time" style="display: inline">0</div> seconds
+        </h1>
+
+        <p>
+            Timeout enabled: <input 
+            type="checkbox" 
+            name="timeoutToggle" 
+            id="timeoutToggle"
+            checked
+            onchange="toggle(this)"/>
+        </p>
+    </body>
+</html>
